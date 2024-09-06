@@ -30,7 +30,7 @@ import Cache from './cache';
 import dependUtil from './depend-util';
 import { assets, references } from './shared';
 
-function visitAsset (asset: Asset, deps: string[]): void {
+function visitAsset ( asset: Asset, deps: string[]): void {
     // Skip assets generated programmatically or by user (e.g. label texture)
     if (!asset._uuid) {
         return;
